@@ -1,84 +1,97 @@
-
 <!doctype html>
 <html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Tinos:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-        <meta name="description" content="sean snyder software enginner resume">
-        <meta name="keywords" content="sean snyder, software engineer, web developer, resume, Los Angeles CA, Dallas TX, SoftLayer, IBM, Software">
+        <meta name="description" content="Sean Snyder is a software engineer living in Los Angeles, CA">
+        <meta name="keywords" content="sean snyder, software engineer, web developer, resume, Los Angeles CA, Dallas TX, SoftLayer, IBM, CornerStone on Demand, Software">
         <meta name="author" content="Sean Snyder">
         <link rel="shortcut icon" href="/favicon.ico">
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
         <link rel="stylesheet" href="/css/style.css" >
         <link rel="stylesheet" href="/css/handheld.css" media="handheld">
-        <title>sean snyder - resume</title>        
+        <title>sean snyder - resume</title>
     </head>
     <!--[if lt IE 7 ]> <body class="page page-id-6 page-template-default ie6"> <![endif]-->
     <!--[if IE 7 ]>    <body class="page page-id-6 page-template-default ie7"> <![endif]-->
     <!--[if IE 8 ]>    <body class="page page-id-6 page-template-default ie8"> <![endif]-->
     <!--[if IE 9 ]>    <body class="page page-id-6 page-template-default ie9"> <![endif]-->
     <!--[if (gt IE 9)|!(IE)]><!--> <body class="page"> <!--<![endif]-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-3096272-20', 'auto');
-              ga('send', 'pageview');
-
-            </script>
-
-                    <div id="container">
-                        <header id="main_header" role="banner">
-                            <h1><a href="/">Sean Snyder</a></h1>
-                        </header>
-                
-
+            ga('create', 'UA-3096272-20', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <div id="container">
+            <header id="main_header" role="banner">
+                <h1><a href="/">Sean Snyder</a></h1>
+            </header>
             <nav id="main_nav">
-                <div class="menu-full-menu-container">
-                    <ul id="menu-full-menu" class="menu">
-                        <li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a title="resume" href="/resume/index.html">Resume</a></li>
-                        <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7"><a title="about" href="/about/index.html">About</a></li>
-                        <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a title="about" href="/tx-lottery/index.html">TX Lottery</a></li>
+                <div>
+                    <ul>
+                        <li><a title="resume" href="/resume/index.html">Resume</a></li>
+                        <li><a title="about" href="/about/index.html">About</a></li>
+                        <li><a title="tx lottery" href="/tx-lottery/index.html">TX Lottery</a></li>
                     </ul>
                 </div>
             </nav>
-
             <div id="main" role="main">
                 <article class="page">
                     <header>
-                      <h2>Resume</h2>
+                      <h1>Resume</h1>
                     </header>
                     <p>&nbsp;</p>
-                    <p><strong>Formal Training</strong></p>
+                    <h2>Formal Training</h2>
+                    <p>&nbsp;</p>
                     <p>San José State University, San Jose, CA, December 2007</p>
                     <p>B.S. Degree in Computer Science, Minor in Mathematics</p>
                     <p>&nbsp;</p>
-                    <p><strong>Practical Experience</strong></p>
+
+                    <h2>Practical Experience</h2>
                     <p>&nbsp;</p>
 
-            	    <p><strong>Software Engineer</strong> (01/2019 - Current)</p>
+            	    <p><strong>Software Engineer</strong> (01/2019 - 02/2020)</p>
                     <p>
                         <strong>
-                            <a title="Cornerstone on Demand" href="https://www.cornerstoneondemand.com/" target="_blank">Cornerstone on Demand</a>
-                            - Santa Monica, CA
+                            <a title="Cornerstone on Demand" href="https://www.cornerstoneondemand.com" target="_blank">Cornerstone on Demand</a> - Santa Monica, CA
                         </strong>
                     </p>
                     <ul>
-                        <li>Currently working on the Learning Management System team.</li>
+                        <li>Worked on the Learning Management System (LMS) Curriculum domain team.</li>
+                        <li>Open Source code contributions to core PubSub library used throughout the company.</li>
+                        <li>Built error handling to ensure the Training Removal Tool was rerunnable and automatically retried; Saved support staff from ~10 cases per month.</li>
+                        <li>Migrated Curriculum Versioning (due to Child Training Versioning) to Event Driven Architecture in AWS to offload processing from Monolith and handle more throughput.</li>
+                        <li>Built Event Driven audit logging system with SNS, SQS, and Lambda (C#).</li>
+                        <li>Lambda lead on our team; Helped team members with event driven concepts, POC, IAM access, naming conventions, and development workflow</li>
+                        <li>Built Event Driven Lambda smoke test strategy to confirm subscription connectivity, throughput (performance baseline), and IAM role permissions.</li>
+                        <li>Built Difference Calculator library for determining the changes between two versions of a curriculum.</li>
+                        <li>Published several nugets within our internal nuget repository for usage in distributed microservices.</li>
+                        <li>Fixed a long standing defect related to Curriculum Child Training Completion Propagation. It affected all clients and spanned many years; Built Customer Support tool to run and export an identification script for a particular client, and then upon approval, repair incorrect client data due to defect.</li>
+                        <li>Optimized API performance, found by, and confirmed enhancements with, Prometheus instrumentation data.</li>
+                        <li>Built Splunk and Grafana dashboards to track errors, identify production errors before clients could escalate, and identify performance bottlenecks.</li>
+                        <li>Strong unit test code coverage for all new functionality.</li>
+                        <li>Optimized critical MS SQL Server stored procedures heavily used in production that were not performing well.</li>
+                        <li>Research on sharding event driven SNS/SQS to fit with our existing data sharding strategies.</li>
+                        <li>Onboarded and committed code changes to a 20+ year old monolithic codebase.</li>
+                        <li>Active participant in Code Reviews and knowledge sharing via presentations, within, and across teams.</li>
+                        <li>Response and resolution to Internal QA and Client support escalations and defects. Processed Client Work Orders to report/repair customer data.</li>
+                        <li>Jquery upgrades to latest version requiring refactoring to ensure existing behavior.</li>
+                        <li>2nd place winner in 2019 company-wide Hackathon.</li>
+                        <li>Database migrations to add fields, indexes and support new features.</li>
+                        <li>Technologies Used: C#, .NET, Nuget, MS SQL Server, On Prem, AWS (IAM, STS, SNS, SQS, S3, Lambda, Xray, CloudWatch Log and Alarms), Prometheus, Grafana, Autofac, Extract Transform Load (ETL), Unit Tests, Integration Tests, Splunk, Team Foundation Server (TFS), Git, Bitbucket, Jenkins, JavaScript.</li>
                     </ul>
                     <p>&nbsp;</p>
                     <p><strong>Senior Full Stack Developer</strong> (08/2018 - 01/2019)</p>
             	    <p><strong>Full Stack Developer</strong> (08/2017 - 08/2018)</p>
             	    <p>
             			<strong>
-            				<a title="Native Instruments" href="http://native-instruments.com" target="_blank">Native Instruments</a> - 
-            				<a title="Sounds.com" href="https://sounds.com" target="_blank">Sounds.com</a>
-            				- Hollywood, CA
+            				<a title="Native Instruments" href="http://native-instruments.com" target="_blank">Native Instruments</a> - <a title="Sounds.com" href="https://sounds.com" target="_blank">Sounds.com</a> - Hollywood, CA
             			</strong>
-            	    </p>	
+            	    </p>
                     <ul>
                         <li>Worked on January 2018 launch of <a href="https://sounds.com" target="_blank">sounds.com</a></li>
                         <li>Worked on i18n of public API to additionally support French, Spanish, and German.</li>
@@ -91,15 +104,14 @@
                         <li>System to securely accept, store, and retrieve W9 forms submitted via partner portal. Audit trail and defined read and write roles for different levels of admin access. Encrypted storage with KMS and DynamoDb.</li>
                         <li>Active role growing the teams through hiring decisions, technical interviews and pre-screening of candidates. Mentoring less senior developers.</li>
                         <li>Ongoing refactoring and maintenance of public APIs and documentation for internal developers. Partner API functional tests automated by Postman. PHPUnit testing of BackOffice and async jobs with 80% coverage. Alerts and dashboards in Loggly.</li>
-                        <li>Technologies Used: Object Oriented PHP, Git, PHPUnit, CodeIgniter, Javascript, Flyway DataBase Migrations, Composer, PostgreSQL, Redis, S3, DynamoDb, Docker, Algolia, CloudFront, Loggly, BitBucket, CircleCI, SendGrid, Stripe. </li>
+                        <li>Technologies Used: Object Oriented PHP, Git, PHPUnit, CodeIgniter, Javascript, Flyway DataBase Migrations, Composer, PostgreSQL, Redis, S3, DynamoDb, Docker, Algolia, CloudFront, Loggly, BitBucket, CircleCI, SendGrid, Stripe.</li>
                     </ul>
                     <p>&nbsp;</p>
-                    <p><strong>Software Engineer III</strong> (10/2015 - 05/2017)</p>
+                    <p><strong>Software Engineer III</strong> (09/2015 - 05/2017)</p>
                     <p><strong>Software Engineer II</strong> (04/2013 - 09/2015)</p>
                     <p>
                         <strong>
-                            <a title="SoftLayer, an IBM Company" href="http://www.softlayer.com" target="_blank">SoftLayer, an IBM Company</a>
-                            - Dallas, TX and London, England
+                            <a title="SoftLayer, an IBM Company" href="http://www.softlayer.com" target="_blank">SoftLayer, an IBM Company</a> - Dallas, TX and London, England
                         </strong>
                     </p>
                     <ul>
@@ -115,11 +127,10 @@
                     </ul>
                     <p>&nbsp;</p>
                     <p><strong>Senior Web Developer</strong> (12/2009 - 04/2013)</p>
-                    <p><strong>Web Developer</strong> (2/2008 – 11/2009)</p>
+                    <p><strong>Web Developer</strong> (2/2008 – 12/2009)</p>
                     <p>
                         <strong>
-                            <a title="Apollo Interactive" href="http://www.apollointeractive.com" target="_blank">Apollo Interactive</a>
-                            - Los Angeles, CA and Dallas, TX
+                            <a title="Apollo Interactive" href="http://www.apollointeractive.com" target="_blank">Apollo Interactive</a> - Los Angeles, CA and Dallas, TX
                         </strong>
                     </p>
                     <ul>
@@ -141,10 +152,9 @@
                         <li>Responsible for database schema decisions, system architecture for the profile system (i.e. business and personal accounts)</li>
                         <li>Implemented user interface mockups generated by the UI team.</li>
                         <li>Technologies Used: PHP, SVN, JavaScript, jQuery, BASH</li>
-
                     </ul>
                     <p>&nbsp;</p>
-                    <p><strong>Quality Assurance</strong> (6/2005 - 12/2006)</p>
+                    <p><strong>Quality Assurance</strong> (5/2005 - 12/2006)</p>
                     <p><strong>Software Engineering Co-Op</strong> (1/2005 - 5/2005)</p>
                     <p>
                         <strong>
@@ -159,7 +169,6 @@
                         <li>Developed data analysis scripts to compile meaningful charts/reports and presented information to the entire team.</li>
                         <li>Functional testing during the certification phase of our development cycle.</li>
                         <li>Coordination with an International QA team to share test plan responsibilities and certify i18n functionality.</li>
-
                     </ul>
                     <p><strong>Project:</strong> DMN</p>
                     <ul>
@@ -181,13 +190,14 @@
                         <li>Began working to port the TopSpeed software from the Windows platform to the Mac OS X.</li>
                     </ul>
                     <p>&nbsp;</p>
-                    <p><strong>Spoken Languages</strong></p>
-                    <p>Intermediate proficiency in Italian, Spanish and Japanese.</p>
-                    <p>Beginner proficiency in French and German.</p>
-                    <p>&nbsp;</p>
+
+                    <h2>Spoken Languages</h2>
+                    <ul>
+                        <li>Intermediate proficiency in Italian, Spanish and Japanese.</li>
+                        <li>Beginner proficiency in French and German.</li>
+                    </ul>
                 </article>
             </div>
-
             <footer/>
         </div>
     </body>
